@@ -1,0 +1,10 @@
+.primaryButton {
+  background-color: var(--colorPrimary);
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: var(--white);
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+}

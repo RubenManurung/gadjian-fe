@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* thumb and track color */
+}
+
+:root {
+  --colorPrimary: #23C7C6;
+  --colorSecondary: #707070;
+  --colorDarkSecondary: #373737;
+  --bgColor: #F9F9F9;
+  --colorBorder: #EAEAEA;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Robot", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}

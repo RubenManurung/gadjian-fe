@@ -1,0 +1,69 @@
+.containerDashboard {
+  background-color: var(--bgColor);
+  max-width: 1440px;
+  margin: auto;
+}
+
+section.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+.personalList {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 32px;
+  background-color: var(--white);
+}
+
+.cardPersonnels {
+  display: flex;
+  grid-gap: 16px;
+  margin: 32px;
+}
+
+.personalListTitle {
+  color: var(--colorPrimary);
+  font-weight: bold;
+}
+
+.personalListDesc {
+  color: var(--colorSecondary);
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 700px) {
+  section.content {
+    margin-left: 0;
+
+  }
+
+  .personalList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardPersonnels {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .arrowContainer {
+    width: 55%;
+  }
+
+}
