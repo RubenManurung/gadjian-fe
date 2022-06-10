@@ -13,9 +13,6 @@ import {
 
 const Index = (props) => {
   const { personnels, idxStart, setIdxStart, idxEnd, setIdxEnd } = props;
-  console.log("personnels", personnels);
-  console.log("idxStart", idxStart);
-  console.log("idxEnd", idxEnd);
   return (
     <div className={styles.containerDashboard}>
       <Navbar />
@@ -32,7 +29,6 @@ const Index = (props) => {
             name="searchPersonnels"
             type="text"
             placeholder="Find Personnels"
-            // value=""
             onChange={(e) => console.log(e.target.value)}
           >
             <FontAwesomeIcon
@@ -45,9 +41,11 @@ const Index = (props) => {
 
       <section className={styles.content}>
         <div className={styles.cardPersonnels}>
-          {personnels.map((value, idx) => {
-            return <Card key={idx} personnelsData={value} />;
-          })}
+          {personnels?.data?.results
+            ?.slice(idxStart, idxEnd)
+            .map((value, idx) => {
+              return <Card key={idx} personnelsData={value} />;
+            })}
         </div>
         <div className={`${styles.arrowContainer} `}>
           <button

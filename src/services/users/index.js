@@ -6,7 +6,6 @@ export const getDataUser = (page) => {
     axios
       .get(`${API}/api/?result=${page}`)
       .then((res) => {
-        console.log("RESPONSE", res);
         return res.data;
       })
       .catch((error) => {

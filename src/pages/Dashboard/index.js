@@ -16,7 +16,7 @@ const Index = (props) => {
     <>
       <section>
         <Dashboard
-          personnels={personnels?.data?.results?.slice(idxStart, idxEnd)}
+          personnels={personnels}
           idxStart={idxStart}
           setIdxStart={setIdxStart}
           idxEnd={idxEnd}

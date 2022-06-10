@@ -11,15 +11,10 @@ export const startFetchingPersonnels = (data) => {
 
 const getDataPersonnels = (result) => {
   return async (dispatch) => {
-    // console.log("PAGE", page);
-    // console.log("RESULT", result);
     await axios
       .get(`${API}/api/?results=${result}`)
       .then((res) => {
-        // console.log("RESSSS", res);
-        // if (res.status === 200) {
         dispatch(startFetchingPersonnels(res.data));
-        // }
       })
       .catch((error) => {
         console.log("ERROR", error);
