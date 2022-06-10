@@ -8,9 +8,6 @@ const Index = (props) => {
   const [idxStart, setIdxStart] = useState(0);
   const [idxEnd, setIdxEnd] = useState(4);
 
-  // console.log(personnels.data.results.length % 3);
-  // console.log("TEST", personnels.data.results.slice(1, 5));
-
   useEffect(() => {
     props.getDataPersonnels(28);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -19,7 +16,7 @@ const Index = (props) => {
     <>
       <section>
         <Dashboard
-          personnels={personnels.data.results.slice(idxStart, idxEnd)}
+          personnels={personnels?.data?.results?.slice(idxStart, idxEnd)}
           idxStart={idxStart}
           setIdxStart={setIdxStart}
           idxEnd={idxEnd}
